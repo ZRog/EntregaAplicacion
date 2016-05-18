@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.proyecto.roger.entregaaplicacion.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+        android:id="@+id/LL">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Nombre"
+            android:id="@+id/TietN"
+            android:inputType="text"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <DatePicker
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"
+        android:id="@+id/DP"/>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Email"
+            android:id="@+id/TietE"
+            android:inputType="textEmailAddress"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Telefono"
+            android:id="@+id/TietT"
+            android:inputType="phone"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Descripcion del contacto"
+            android:id="@+id/TietD"
+            android:inputType="textMultiLine"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Siguiente"
+        android:layout_below="@id/LL"
+        android:id="@+id/Sgt"
+        android:theme="@style/BotonRaised"
+        />
+
+</RelativeLayout>
